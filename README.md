@@ -27,7 +27,7 @@ npm install
 PORT=5000
 
 #PostgreSQL
-DATABASE_URL=postgresql://postgres:123@localhost:5432/blogdb
+DATABASE_URL=postgresql://postgres:[password]@localhost:5432/[dbname]
 
 #JWT
 JWT_SECRET=super_strong_jwt_secret_change_me
