@@ -1,18 +1,6 @@
 A modern full-stack blog platform built with Next.js, Redux, TailwindCSS, Node.js, Express, and PostgreSQL. Authenticated users can create, edit, delete, and view blog posts. Public users can view posts without logging in.
 ## Getting Started
 
-Frontend:
-
-Next.js 16
-
-TypeScript
-
-Redux Toolkit
-
-React-Quill (Rich Text Editor)
-
-TailwindCSS
-
 Backend:
 
 Node.js (v22)
@@ -50,13 +38,6 @@ NODE_ENV=development
 Start server:
 npm run dev
 
-Frontend
-1:Install dependencies:
-  .npm install
-  
-Start server:
-
-npm run dev
 
  API Endpoints
 
@@ -119,38 +100,6 @@ Ensures only post owners can edit/delete content
 Centralized error handling and CORS configuration
 
 🔹 Frontend Architecture (Next.js + Redux + Tailwind)
-
-The frontend uses Next.js Pages Router with centralized state management.
-
-1. Pages (Routing Layer)
-
-Each file under /pages maps to a route
-
-Public and protected routes handled via ProtectedRoute component
-
-2. Redux Store
-
-Global state managed using Redux Toolkit
-
-Separate slices for auth and posts
-
-Async operations handled via createAsyncThunk
-
-3. Components
-
-Reusable UI components (Navbar, BlogCard)
-
-Stateless and highly reusable
-
-4. API Layer
-
-Axios instance with interceptors
-
-Automatically attaches JWT token to protected requests
-
-5. Styling
-
-TailwindCSS for utility-first, responsive UI
 
 PostMan Link
 
