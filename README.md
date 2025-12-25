@@ -1,7 +1,7 @@
 A modern full-stack blog platform built with Next.js, Redux, TailwindCSS, Node.js, Express, and PostgreSQL. Authenticated users can create, edit, delete, and view blog posts. Public users can view posts without logging in.
 ## Getting Started
 
-Backend:
+# Backend:
 
 Node.js (v22)
 
@@ -19,27 +19,27 @@ Backend
 
 Clone the repo
 
-Install dependencies:
+# Install dependencies:
 npm install
 
-Create .env file:
+# Create .env file:
 
 PORT=5000
 
-# PostgreSQL
+#PostgreSQL
 DATABASE_URL=postgresql://postgres:123@localhost:5432/blogdb
 
-# JWT
+#JWT
 JWT_SECRET=super_strong_jwt_secret_change_me
 
-# Environment
+#Environment
 NODE_ENV=development
 
 Start server:
 npm run dev
 
 
- API Endpoints
+ # API Endpoints
 
  Delete Post: http://localhost:5000/posts/:id #POST
  
@@ -55,7 +55,7 @@ npm run dev
  
  Login: http://localhost:5000/auth/login  #POST
 
-🔹 Backend Architecture (Node.js + Express + PostgreSQL)
+# Backend Architecture (Node.js + Express + PostgreSQL)
 
 The backend is structured using a Controller–Service–Repository pattern:
 
@@ -98,8 +98,6 @@ JWT authentication middleware protects private routes
 Ensures only post owners can edit/delete content
 
 Centralized error handling and CORS configuration
-
-🔹 Frontend Architecture (Next.js + Redux + Tailwind)
 
 PostMan Link
 
